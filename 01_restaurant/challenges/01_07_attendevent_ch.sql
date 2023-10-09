@@ -2,3 +2,13 @@
 
 -- The customer 'atapley2j@kinetecoinc.com' will be in
 -- attendance, and will bring 3 friends.
+
+Insert into AnniversaryAttendees
+Values ((SELECT CustomerID from Customers
+        WHERE Email = 'atapley2j@kinetecoinc.com'),
+        3);
+
+DELETE FROM AnniversaryAttendees
+WHERE CustomerID is NULL;
+
+SELECT * FROM AnniversaryAttendees;
