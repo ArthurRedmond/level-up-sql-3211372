@@ -6,6 +6,5 @@
 Insert into AnniversaryAttendees
 Values ((SELECT CustomerID from Customers
         WHERE Email = 'atapley2j@kinetecoinc.com'),
-        3);
-
+        4);
 SELECT * FROM AnniversaryAttendees;
