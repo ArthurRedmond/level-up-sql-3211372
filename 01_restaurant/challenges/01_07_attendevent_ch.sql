@@ -8,7 +8,4 @@ Values ((SELECT CustomerID from Customers
         WHERE Email = 'atapley2j@kinetecoinc.com'),
         3);
 
-DELETE FROM AnniversaryAttendees
-WHERE CustomerID is NULL;
-
 SELECT * FROM AnniversaryAttendees;
